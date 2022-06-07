@@ -3,8 +3,6 @@ package methods
 import (
 	"net/url"
 	"strconv"
-
-	"github.com/letsnode/meclient"
 )
 
 type LimitOffsetOpts struct {
