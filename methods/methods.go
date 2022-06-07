@@ -18,11 +18,10 @@ const (
 )
 
 type Methods struct {
-	apikey      string
 	rateLimiter *rate.Limiter
 }
 
-func NewMethods(apikey string, rateTime time.Duration, burst int) *Methods {
+func NewMethods(rateTime time.Duration, burst int) *Methods {
 	return &Methods{
 		rateLimiter: rate.NewLimiter(rate.Every(rateTime), burst),
 	}
