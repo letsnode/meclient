@@ -14,7 +14,7 @@ type LimitOffsetOpts struct {
 
 func (q *LimitOffsetOpts) CheckLimit(maxLimit int) error {
 	if q.Limit <= 0 || q.Limit > maxLimit {
-		return meclient.ErrInvalidQueryParam
+		return ErrInvalidQueryParam
 	}
 	return nil
 }
