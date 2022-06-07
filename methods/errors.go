@@ -1,3 +1,5 @@
+package methods
+
 type MethodError struct {
 	ErrorString string
 }
